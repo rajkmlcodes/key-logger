@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* hero section styling */
+.heroSection {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background: rgb(249, 78, 78);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 78, 78, 1) 0%,
+    rgba(235, 47, 138, 1) 43%,
+    rgba(204, 110, 233, 1) 100%
+  );
+  color: #fff;
+}
+
+.heroSection h1 {
+  font-size: 2.5rem;
+}
+
+/* MAIN --------  */
+/* logger info text */
+.loggerInfo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.loggerInfo p {
+  font-size: 1.6rem;
+}
+
+.loggerDisplay {
+  width: 94%;
+  background: gray;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.display {
+  background: #fff;
+  color: #222;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logDisplay {
+  border-bottom: 1px solid #777;
+}
+
+.loggerSubHeading {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loggerSubHeading p {
+  margin: 10px 5px;
+  font-size: 1.38rem;
+}
+
+/* i btn */
+.iBtnContent {
+  height: 0;
+  width: 0;
+  display: none;
+  position: relative;
+  top: -32px;
+  left: -92%;
+}
+
+.iBtnContent p {
+  font-size: 11px;
+  word-wrap: break-word;
+  width: 300px;
+  background: #eaf0f1;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+/* Show iBtnContent when hovering over the "i" text */
+.fa-circle-info:hover + .iBtnContent {
+  display: block;
+}
+
+/* btn */
+.loggerBtnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.startBtn {
+  background: #019031;
+  transition: background 0.12s ease;
+}
+
+.startBtn:hover {
+  cursor: pointer;
+  background: #00bf40;
+}
+
+.stopBtn {
+  cursor: pointer;
+  background: #ff3031;
+  transition: background 0.12s ease;
+}
+
+.stopBtn:hover {
+  background: rgb(255, 100, 113);
+}
+
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Responsive styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .heroSection h1 {
+    font-size: 2rem;
+  }
+
+  .loggerInfo p {
+    font-size: 1.4rem;
+  }
+
+  .iBtnContent {
+    width: 250px;
+    left: -85%;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  .heroSection h1 {
+    font-size: 1.8rem;
+  }
+
+  .loggerInfo p {
+    font-size: 1.2rem;
+  }
+
+  .iBtnContent {
+    width: 200px;
+    left: -75%;
+  }
+
+  .iBtnContent {
+    width: 90%;
+    /* Adjust width as needed */
+    left: 5%;
+    /* Center the iBtnContent */
+    top: -42px;
+    /* Adjust the position */
+  }
+}
+
+/* Responsive styles for larger screens */
+@media only screen and (min-width: 1024px) {
+  .heroSection h1 {
+    font-size: 3rem;
+  }
+
+  .loggerInfo p {
+    font-size: 1.8rem;
+  }
+
+  .iBtnContent {
+    width: 350px;
+    left: -100%;
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 767px) {
+  .loggerBtnContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Responsive styles for larger screens */
+@media only screen and (min-width: 1024px) {
+  .loggerBtnContainer {
+    justify-content: flex-start;
+  }
+
+  .btn {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .btn:last-child {
+    margin-right: 0;
+  }
+}

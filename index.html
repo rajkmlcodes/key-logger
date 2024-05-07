@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Logger Website</title>
+
+    <!-- CSS file linked -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <!-- hero section -->
+      <header class="heroSection">
+        <h1>Key Logger</h1>
+      </header>
+
+      <!-- logger info area -->
+      <main class="loggerInfo">
+        <div class="loggerSubHeading">
+          <p>Logging Keys, Unveiling Insights</p>
+          <i class="fa-solid fa-circle-info"></i>
+
+          <div class="iBtnContent">
+            <p>
+              Click <strong>start</strong> button to start key logger and then <strong>press any key</strong> to see the
+              live result of pressed key
+            </p>
+          </div>
+        </div>
+        
+        <div class="loggerDisplay">
+          <div class="display logDisplay" id="log"></div>
+          <div class="display stateDisplay" id="state"></div>
+        </div>
+
+        <div class="loggerBtnContainer">
+          <button class="btn startBtn" id="startBtn">Start Logging Keypress</button>
+          <button class="btn stopBtn" id="stopBtn">Stop Logging Keypress</button>
+        </div>
+      </main>
+    </div>
+
+    <!-- javascript file linked -->
+    <script src="./script.js"></script>
+  </body>
+</html>
