@@ -157,11 +157,6 @@
   .loggerInfo p {
     font-size: 1.4rem;
   }
-
-  .iBtnContent {
-    width: 250px;
-    left: -85%;
-  }
 }
 
 /* Responsive styles for mobile devices */
@@ -174,39 +169,21 @@
     font-size: 1.2rem;
   }
 
-  .iBtnContent {
-    width: 200px;
-    left: -75%;
+  .loggerSubHeading {
+    justify-content: center;
+    /* Center horizontally */
   }
 
   .iBtnContent {
-    width: 90%;
-    /* Adjust width as needed */
-    left: 5%;
-    /* Center the iBtnContent */
-    top: -42px;
-    /* Adjust the position */
-  }
-}
-
-/* Responsive styles for larger screens */
-@media only screen and (min-width: 1024px) {
-  .heroSection h1 {
-    font-size: 3rem;
-  }
-
-  .loggerInfo p {
-    font-size: 1.8rem;
-  }
-
-  .iBtnContent {
-    width: 350px;
+    top: -32px;
     left: -100%;
   }
-}
 
-/* Responsive styles for smaller screens */
-@media only screen and (max-width: 767px) {
+  .iBtnContent p {
+    font-size: 11px;
+    text-align: left;
+  }
+
   .loggerBtnContainer {
     flex-direction: column;
     align-items: stretch;
@@ -220,6 +197,10 @@
 
 /* Responsive styles for larger screens */
 @media only screen and (min-width: 1024px) {
+  .heroSection h1 {
+    font-size: 3rem;
+  }
+
   .loggerBtnContainer {
     justify-content: flex-start;
   }
